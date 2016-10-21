@@ -1,0 +1,204 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+      <img src="http://localhost:3000/images/samplefile.jpg" height="500" width="auto">
+      <a href="http://localhost:3000/translate">eyeTranslate!</a>
+  </body>
+</html>
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<!-- If IE use the latest rendering engine -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Set the page to the width of the device and set the zoon level -->
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">    
+<link rel="stylesheet" type="text/css" href="http://localhost:3000/stylesheets/mystyle.css">
+
+    <style>
+	.li2 a {
+		color:black;
+	}
+</style>
+
+</head>
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+    
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+<!--https://www.youtube.com/watch?v=zPh0RbYiYGg-->
+    <!-- navbar--> 
+     <!-- largest view -->
+    <div class="visible-lg"> 
+        <div id="banner2">
+                <ul class="ul2" >
+                    <li class="li2" style="padding-right: 5%;"><a href="index.html"> Log out</a></li>
+                    <li class="li2"><a href="search.html" > Search </a></li>
+                    <li class="li2"><a href="#" > Profile </a></li>
+                    <li class="li2"><a href="http://localhost:3000"> Home </a></li>
+                </ul>
+               
+        </div>
+    </div>   
+ <!-- medium view -->
+    <div class="visible-md">
+        <div id="banner2">
+            <div id="innerbanner">
+                <a href="home.html"><img src="http://localhost:3000/images/logo4.png" id="logotop"  alt="Logo" height="55px"   style="margin-left: 10%;"></a>
+                <div id="ul2">
+                    <ul class="ul2">
+                        <li class="li2" style="padding-right: 10%;"><a href="index.html"> Log out</a></li>
+                    <li class="li2"><a href="search.html" > Search </a></li>
+                    <li class="li2"><a href="Profile.html" > Profile </a></li>
+                    <li class="li2"><a href="http://localhost:3000"> Home </a></li>
+                    </ul>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- small view -->
+    <div class="visible-sm">
+       
+            <div id="banner2">
+                <div id="innerbanner">
+                    <a href="home.html"><img src="http://localhost:3000/images/logo4.png" id="logotop"  alt="Logo" height="55px" style="margin-left: 8%;"></a>
+                    <div id="ul2">
+                    <ul class="ul2">
+                       <li class="li2" style="padding-right: 5%; padding-left: 0px;"><a href="index.html"> Log out</a></li>
+                    <li class="li2" style="padding-left: 0px;"><a href="search.html" > Search </a></li>
+                    <li class="li2" style="padding-left: 0px;"><a href="Profile.html" > Profile </a></li>
+                    <li class="li2" style="padding-left: 0px;"><a href="http://localhost:3000"> Home </a></li>
+                    </ul>
+                 </div>
+                </div>
+            </div>
+            
+         </div>
+                <!-- xtra small view -->
+            <div class="visible-xs">
+                <div id="banner1">
+                    <div id="innerbanner">
+                        <a href="home.html"><img src="http://localhost:3000/images/logo4.png" id="logotop"  alt="Logo" height="55px" style="margin-left: 21%;"></a>
+                        <div id="sidebar">
+                            <div class="sidebarprofile">
+                            <a href="Profile.html"><img src="http://localhost:3000/images/profileicon.png" height="150px"></a>
+                            <a href="Profile.html"><p>Christina Petris</p></a>
+                            </div>
+                            <ul>
+                                <li><a href="home.html" style="background:#853138;"> Home</a></li>
+                                <li><a href="Profile.html"> Profile</a></li>
+                                <li><a href="search.html"> Search</a></li>
+                                <li><a href="index.html"> Log out</a></li>
+                            </ul>
+                                <div id="sidebar-btn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+                        $('#sidebar-btn').click(function(){
+                            $('#sidebar').toggleClass('visible');
+                            $('#banner1').toggleClass('visible');
+                            });
+                        });
+    </script>
+        <!-- navbar finished-->
+
+    <div class="container" style="margin-top:50px;">
+        <div class="row" style="text-align:center; padding-top: 6vh;">
+            <div class="col-lg-3 col-md-2 col-sm-1 col-xs-0">
+               
+            </div>
+<!--             <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">-->
+            <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">
+                
+            <img src="http://localhost:3000/images/samplefile.jpg" height="auto" width="100%">
+<!--
+                 <h1 style="text-align: center; margin-top:5px; margin-bottom:2px; color:#9F2731;">&nbsp;&nbsp;&nbsp;
+</h1> 
+-->
+                 
+            <div class="row" style="text-align:center; padding-top: 10px;">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="translation">
+<!--http://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_select_form-->
+<b>Translation</b>
+<ul style="padding-top:3px; text-align:left;">
+  {{#classes}}
+  <li>{{class}}</li>
+                 {{/classes}}
+</ul>
+
+<p><a class="btn btn-primary btn-block" role="button" id="login"><span class="save">Save</span></a></p></div>
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>
+</script>
+
+
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="translation">
+    <b>Scores</b>
+<ul style="padding-top:3px; text-align:left;">
+  {{#classes}}
+  <li>{{score}}</li>
+                 {{/classes}}
+</ul>
+    
+<p>
+<a href="home.html" class="btn btn-primary btn-block" role="button" id="login" onclick="goBack()">Back</a></p></div>
+                       <script>
+function goBack() {
+    window.history.back();
+}
+</script>
+</div>             
+<!--
+                                {{#classes}}
+                                    <p style ="text-align: center;">{{class}} - {{score}}</p>
+                                {{/classes}}
+-->
+                 
+            </div>
+        </div>
+            <div class="col-lg-3 col-md-2 col-sm-1 col-xs-0">
+               
+            </div>
+      
+        </div>
+    </div>
+    </body>
+</html>
+<!--
+<div>Icons made by <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+-->
+

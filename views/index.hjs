@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<!-- If IE use the latest rendering engine -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Set the page to the width of the device and set the zoon level -->
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">    
+<link rel="stylesheet" type="text/css" href="stylesheets/mystyle.css">
+
+    <style>
+	.li2 a {
+		color:black;
+	}
+</style>
+
+</head>
+<body>
+<!--https://www.youtube.com/watch?v=zPh0RbYiYGg-->
+    <!-- navbar--> 
+     <!-- largest view -->
+    <div class="visible-lg"> 
+        <div id="banner2">
+                <ul class="ul2" >
+                    <li class="li2" style="padding-right: 5%;"><a href="index.html"> Log out</a></li>
+                    <li class="li2"><a href="search.html" > Search </a></li>
+                    <li class="li2"><a href="Profile.html" > Profile </a></li>
+                    <li class="li2"><a href="home.html" style="color:#9F2731"> Home </a></li>
+                </ul>
+               
+        </div>
+    </div>   
+ <!-- medium view -->
+    <div class="visible-md">
+        <div id="banner2">
+            <div id="innerbanner">
+                <a href="home.html"><img src="images/logo4.png" id="logotop"  alt="Logo" height="55px"   style="margin-left: 10%;"></a>
+                <div id="ul2">
+                    <ul class="ul2">
+                        <li class="li2" style="padding-right: 10%;"><a href="index.html"> Log out</a></li>
+                    <li class="li2"><a href="search.html" > Search </a></li>
+                    <li class="li2"><a href="Profile.html" > Profile </a></li>
+                    <li class="li2"><a href="home.html" style="color:#9F2731"> Home </a></li>
+                    </ul>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- small view -->
+    <div class="visible-sm">
+       
+            <div id="banner2">
+                <div id="innerbanner">
+                    <a href="home.html"><img src="images/logo4.png" id="logotop"  alt="Logo" height="55px" style="margin-left: 8%;"></a>
+                    <div id="ul2">
+                    <ul class="ul2">
+                       <li class="li2" style="padding-right: 5%; padding-left: 0px;"><a href="index.html"> Log out</a></li>
+                    <li class="li2" style="padding-left: 0px;"><a href="search.html" > Search </a></li>
+                    <li class="li2" style="padding-left: 0px;"><a href="Profile.html" > Profile </a></li>
+                    <li class="li2" style="padding-left: 0px;"><a href="home.html" style="color:#9F2731"> Home </a></li>
+                    </ul>
+                 </div>
+                </div>
+            </div>
+            
+         </div>
+                <!-- xtra small view -->
+            <div class="visible-xs">
+                <div id="banner1">
+                    <div id="innerbanner">
+                        <a href="home.html"><img src="images/logo4.png" id="logotop"  alt="Logo" height="55px" style="margin-left: 21%;"></a>
+                        <div id="sidebar">
+                            <div class="sidebarprofile">
+                            <a href="Profile.html"><img src="images/profileicon.png" height="150px"></a>
+                            <a href="Profile.html"><p>Christina Petris</p></a>
+                            </div>
+                            <ul>
+                                <li><a href="home.html" style="background:#853138;"> Home</a></li>
+                                <li><a href="Profile.html"> Profile</a></li>
+                                <li><a href="search.html"> Search</a></li>
+                                <li><a href="index.html"> Log out</a></li>
+                            </ul>
+                                <div id="sidebar-btn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+                        $('#sidebar-btn').click(function(){
+                            $('#sidebar').toggleClass('visible');
+                            $('#banner1').toggleClass('visible');
+                            });
+                        });
+    </script>
+        <!-- navbar finished-->
+
+    <div class="container" style="margin-top:50px;">
+        <div class="row" style="text-align:center; padding-top: 6vh;">
+            <div class="col-lg-1 col-md-2 col-sm-1 col-xs-0">
+               
+            </div>
+             <div class="col-lg-10 col-md-8 col-sm-10 col-xs-12">
+                <h1 style="text-align: center;">Image Translate</h1>
+                 <p style="text-align: center;">Welcome to iTranslate! Choose a sample image below to start translating or upload your own image.</p>
+                 
+                 
+                 <div class="row">
+                     <div class="visible-lg">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="pics">
+                         <a href="/"><img src="images/fireworks.jpg" width="100%"></a>
+      </div>
+                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="pics">
+                         <a href="Mt-fuji.html"><img src="images/mt-fuji.jpg" width="100%"></a>
+      </div>
+                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="pics">
+                         <a href="tiger.html"><img src="images/tiger.jpg" width="100%"></a>
+      </div>
+                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="pics">
+                          <a href="sakura.html"><img src="images/strawberries.jpg" width="100%"></a>
+      </div>
+                     </div>
+            </div>
+                 
+                 
+                 <br>
+                 <br>
+                             <form ref='uploadForm' 
+            id='uploadForm' 
+            action='/upload' 
+            method='POST' 
+            encType="multipart/form-data">
+                <input type="file" name="sampleFile" id=chooseFile />
+                <input type='submit' value='Upload!' id="upload"  class="btn btn-primary btn-block"/>
+        </form>
+        </div>
+                 
+            </div>
+             <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
+                
+            </div>
+      
+        </div>
+ 
+    </body>
+</html>
+<!--
+<div>Icons made by <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+-->
+<!--
+
+<div class="row" style="text-align:center; padding-top: 6vh;">
+            <div class="col-lg-1 col-md-2 col-sm-1 col-xs-0">
+               
+            </div>
+             <div class="col-lg-10 col-md-8 col-sm-10 col-xs-12">
+                <h1 style="text-align: center;">Home</h1>
+                 <p style="text-align: center;">Welcome to iTranslate! Choose a sample image below to start translating or upload your own image.</p>
+                 <div class="row">
+                     <div class="visible-lg">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="pics">
+                         <a href="firework.html"><img src="img/images/fireworks.jpg" width="100%"><h1 class="picdesc">花火</h1></a>
+      </div>
+                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="pics">
+                         <a href="Mt-fuji.html"><img src="img/images/mt-fuji.jpg" width="100%"> <h1 class="picdesc">富士山</h1></a>
+      </div>
+                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="pics">
+                         <a href="tiger.html"><img src="img/images/tiger.jpg" width="100%"> <h1 class="picdesc">虎</h1></a>
+      </div>
+                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="pics">
+                          <a href="sakura.html"><img src="img/images/upload.png" width="100%"> <h1 class="picdesc"></h1></a>
+      </div>
+                     </div>
+            </div>
+                 <br>
+                 <div class="hidden-lg">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-0" id="pics">
+                        <a href="firework.html"><img src="img/images/fireworks.jpg" width="100%"><h1 class="picdesc">花火</h1></a>
+      </div>
+                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-0" id="pics">
+                         <a href="Mt-fuji.html"> <img src="img/images/mt-fuji.jpg" width="100%"><h1 class="picdesc">富士山</h1></a>
+      </div>
+                     </div>
+                     <br>
+                      <div class="row">
+                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-0" id="pics">
+                         <a href="tiger.html"><img src="img/images/tiger.jpg" width="100%"> <h1 class="picdesc">虎</h1></a>
+      </div>
+                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-0" id="pics">
+                           <a href="sakura.html"><img src="img/images/upload.png" width="100%"> <h1 class="picdesc"></h1></a>
+      </div>
+            </div>
+        </div>
+                 <br>
+                 <div class="hidden-xs">
+                    <input type="text" class="form-control" placeholder="Or paste an image url here">
+                  <p><a href="firework.html" class="btn btn-primary btn-block" role="button" id="login">Submit</a></p>
+                 </div>
+                 <div class="visible-xs">
+                     
+					   <a href="egg.html"><img src="img/picture.png" height="70px" style="margin-bottom:15px;">
+                           </a>
+                     
+                 </div>
+        </div>
+                 
+            </div>
+-->

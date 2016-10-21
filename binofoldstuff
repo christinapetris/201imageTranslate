@@ -1,0 +1,62 @@
+var watson = require('watson-developer-cloud');
+var fs = require('fs');
+
+
+var visual_recognition = watson.visual_recognition({
+  api_key: '9c6313e33e3c9807b9ae41132e414838ba9465e2',
+    version: 'v3',
+  version_date: '2016-05-20'
+});
+
+var express = require('express');
+
+//for file upload
+var fileUpload = require('express-fileupload');
+
+var app = express();
+
+//more for file upload:
+app.use(fileUpload());
+
+app.post('/upload', function(req, res) {
+        var sampleFile;
+        if (!req.files) {
+            res.send('No files were uploaded.');
+            return;
+        }
+
+        sampleFile = req.files.sampleFile;
+        sampleFile.mv('/sampleFile.jpg', function(err) {
+            if (err) {
+                res.status(500).send(err);
+            }
+            else {
+                res.send('File uploaded!)');
+            }
+        });
+});
+
+         
+var params = {
+  images_file: fs.createReadStream('./sampleFile.jpg')
+};
+
+app.get('/', function (req, appRes) {
+
+    visual_recognition.classify(params, function(err, res){
+        if (err){
+            console.log(err);
+            //res.send(err);
+        }
+        else{
+            console.log(JSON.stringify(res, null, 2));
+            appRes.json(res);
+            //appRes.send('<b>Hello World</b> yay');
+
+        }
+    });    
+});
+
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!');
+});
