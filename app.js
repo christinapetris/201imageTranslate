@@ -117,7 +117,7 @@ app.post('/upload', function(req, res) {
                 //res.send('File uploaded!');
                 
                 var params = {
-                  images_file: fs.createReadStream('public/images/samplefile.jpg')
+                  images_file: fs.createReadStream('public/images/sampleFile.jpg')
                 };
 
                 

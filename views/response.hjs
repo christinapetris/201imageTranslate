@@ -144,7 +144,7 @@ function showPage() {
 <!--             <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">-->
             <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">
                 
-            <img src="images/samplefile.jpg" height="auto" width="100%">
+            <img src="images/sampleFile.jpg" height="auto" width="100%">
 <!--
                  <h1 style="text-align: center; margin-top:5px; margin-bottom:2px; color:#9F2731;">&nbsp;&nbsp;&nbsp;
 </h1> 
