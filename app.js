@@ -148,10 +148,7 @@ app.post('/upload', function(req, res) {
 });
 app.get('/translate', function(req, res) {
         var sampleFile;
-        if (!req.files) {
-            res.send('No files were uploaded.');
-            return;
-        }
+     
 
         sampleFile = req.files.sampleFile;
         sampleFile.mv('public/images/sampleFile.jpg', function(err) {
