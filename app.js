@@ -71,9 +71,9 @@ app.use(function(err, req, res, next) {
 
 
 
-//app.get('/', function(req, res){
-//    res.render('response', { title: 'My app eyeTranslate' });
-//});
+app.get('/', function(req, res){
+    res.render('index', { title: 'My app eyeTranslate' });
+});
 
 
 module.exports = app;
