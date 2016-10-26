@@ -134,38 +134,92 @@ app.post('/upload', function(req, res) {
                         console.log(JSON.stringify(context, null, 2));
 
                         res.render('response', context);
-
-                        //appRes.send('<b>Hello World</b> yay');
-
                     }
                 }); 
-
-                
-                
-                //res.render('response', { title: 'My app eyeTranslate' });
             }
         });
 });
 app.get('/translate', function(req, res) {
-
-     
-
-                
-               
-                
-         
-
                         res.render('response');
-
-                        //appRes.send('<b>Hello World</b> yay');
-
-
-                
-                
-                //res.render('response', { title: 'My app eyeTranslate' });
-            
-      
 });
+
+//saved photos
+app.get('/fireworks', function(req, res) {
+    var params = {
+  images_file: fs.createReadStream('./images/fireworks.jpg')
+};
+       visual_recognition.classify(params, function(err, watRes){
+                    if (err){
+                        console.log(err);
+                    }
+                    else{
+                        var classes = watRes.images[0].classifiers[0].classes;
+                        var context  = { classes: classes }
+                        console.log(JSON.stringify(context, null, 2));
+
+                        res.render('fireworks', context);
+                    }
+                }); 
+    
+});
+app.get('/mt-fuji', function(req, res) {
+    var params = {
+  images_file: fs.createReadStream('./images/mt-fuji.jpg')
+};
+       visual_recognition.classify(params, function(err, watRes){
+                    if (err){
+                        console.log(err);
+                    }
+                    else{
+                        var classes = watRes.images[0].classifiers[0].classes;
+                        var context  = { classes: classes }
+                        console.log(JSON.stringify(context, null, 2));
+
+                        res.render('mt-fuji', context);
+                    }
+                }); 
+    
+});
+app.get('/tiger', function(req, res) {
+    var params = {
+  images_file: fs.createReadStream('./images/tiger.jpg')
+};
+       visual_recognition.classify(params, function(err, watRes){
+                    if (err){
+                        console.log(err);
+                    }
+                    else{
+                        var classes = watRes.images[0].classifiers[0].classes;
+                        var context  = { classes: classes }
+                        console.log(JSON.stringify(context, null, 2));
+
+                        res.render('tiger', context);
+                    }
+                }); 
+    
+});
+app.get('/strawberries', function(req, res) {
+    var params = {
+  images_file: fs.createReadStream('./images/strawberries.jpg')
+};
+       visual_recognition.classify(params, function(err, watRes){
+                    if (err){
+                        console.log(err);
+                    }
+                    else{
+                        var classes = watRes.images[0].classifiers[0].classes;
+                        var context  = { classes: classes }
+                        console.log(JSON.stringify(context, null, 2));
+
+                        res.render('strawberries', context);
+                    }
+                }); 
+    
+});
+
+
+
+
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
