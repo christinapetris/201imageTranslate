@@ -100,6 +100,23 @@ app.get('/', function(req, res){
 var fileUpload = require('express-fileupload');
 
 app.use(fileUpload());
+////translate
+//var YandexTranslator = require('yandex.translate');
+// 
+//var translator = new YandexTranslator( {api_key: 'trnsl.1.1.20161026T062450Z.89b62e08b098b57e.1851fe527c17be56c938e48326f6c975ae7a7504'});
+// 
+//var translator.translate('hello', 'ru').then(console.log); // привет 
+//var translator.detect('hello').then(console.log); // en 
+//var translate = require('yandex-translate')( {api_key: 'trnsl.1.1.20161026T062450Z.89b62e08b098b57e.1851fe527c17be56c938e48326f6c975ae7a7504'});
+// 
+//translate.translate('You can burn my house, steal my car, drink my liquor from an old fruitjar.', { to: 'ru' }, function(err, res) {
+//  console.log(res.text);
+//});
+// 
+//translate.detect('Граждане Российской Федерации имеют право собираться мирно без оружия, проводить собрания, митинги и демонстрации, шествия и пикетирование', function(err, res) {
+//   // res.lang -> 'ru' 
+//});
+////end translate
 
 app.post('/upload', function(req, res) {
         var sampleFile;
@@ -139,8 +156,10 @@ app.post('/upload', function(req, res) {
             }
         });
 });
+//for testing
 app.get('/translate', function(req, res) {
-                        res.render('response');
+                        //res.render('response');
+    
 });
 
 //saved photos
@@ -217,6 +236,18 @@ app.get('/strawberries', function(req, res) {
     
 });
 
+app.get('/login', function(req, res) {
+                        res.render('loginpage');
+});
+app.get('/about', function(req, res) {
+                        res.render('about');
+});
+app.get('/profile', function(req, res) {
+                        res.render('profile');
+});
+app.get('/search', function(req, res) {
+                        res.render('search');
+});
 
 
 

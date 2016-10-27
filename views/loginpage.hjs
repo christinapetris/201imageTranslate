@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<!-- If IE use the latest rendering engine -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Set the page to the width of the device and set the zoon level -->
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>Log in</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/mystyle.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">  
+<style>
+
+</style>
+
+</head>
+<body class="loginbackground">
+
+<!-- CONTAINERS -->
+<!-- container puts padding around itself while container-fluid fills the whole screen. Bootstap grids require a container. -->
+<div class="container">
+    
+<div class="row" style="text-align:center; padding-top: 12vh;">
+    
+    <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
+    </div>
+    <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
+    <img src="images/logo4.png" id="logo"  alt="Logo" width="100%" >
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
+    </div>
+    </div>
+<div class="container">
+    <br>
+    
+<div class="row" style="text-align:center;">
+    
+    <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
+    </div>
+    
+  <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+      
+    <div  style="max-width: 350px; margin: 0 auto;"  >
+
+            
+    <input type="text" class="form-control" placeholder="Username" id=formcontrol style="margin-top:5px;">
+    
+
+    <input type="password" class="form-control" placeholder="Password" id=formcontrol>
+
+
+       <p><a href="/" class="btn btn-primary btn-block" role="button" id="login">Log in</a></p>
+      
+      </div>
+  </div>
+
+     
+  <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12" >
+      <br>
+    <div  style="max-width: 350px; margin: 0 auto;" >
+        
+        <p><a href="/" class="btn btn-primary btn-block"  id="fb">Log in with Facebook</a></p>
+        <p><a href="/" class="btn btn-primary btn-block"  id="google">Log in with Google</a></p>
+      </div>
+    </div>
+    
+    <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
+    </div>
+  </div>
+    <br>
+  <p style="text-align:center;">No account? <b><a href="/about">sign up!</a></b></p>
+  
+</div>
+    </div>
+    </body>
+</html>

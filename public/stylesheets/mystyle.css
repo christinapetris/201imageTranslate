@@ -3,7 +3,7 @@
 font-family: 'Avenir LT Std 85 Heavy';
 font-style: normal;
 font-weight: normal;
-src: local('Avenir LT Std 85 Heavy'), url('images/AvenirLTStd-Heavy.woff') format('woff');
+src: url('./images/AvenirLTStd-Heavy.woff') format('woff');
 }
 
 
@@ -11,7 +11,7 @@ src: local('Avenir LT Std 85 Heavy'), url('images/AvenirLTStd-Heavy.woff') forma
 font-family: 'Avenir LT Std 35 Light';
 font-style: normal;
 font-weight: normal;
-src: local('Avenir LT Std 35 Light'), url('images/AvenirLTStd-Light.woff') format('woff');
+src: url('./images/AvenirLTStd-Light.woff') format('woff');
 }
 
 form {
@@ -68,7 +68,8 @@ p {
 
 b {
   font-family: 'Avenir LT Std 85 Heavy';
-     font-weight:normal;
+    font-family: 'Prompt', sans-serif;
+     font-weight: bold;
     text-align: left;
 
 }
@@ -114,6 +115,8 @@ p {
     font-family: 'Avenir LT Std 35 Light';
     font-weight:normal;
     text-align: left;
+     font-family:"Arial", sans-serif;
+   font-size: 21px;
 }
 #signup{
    border-left: 1px solid #606060;
@@ -172,6 +175,10 @@ input{
     #login:active {
        background-color: #521E23;
         border-color: #521E23;
+    }
+  #white {
+       background-color: white;
+        border-color: white;
     }
   #signupbtn {
        background-color: #5b7fc6;
@@ -326,6 +333,9 @@ ul li a {
     padding: 12px;
     font-size:12pt;
     color: white;
+}
+#bigger {
+    font-size:12pt;
 }
 ul li a:hover {
     background:#853138;

@@ -104,9 +104,22 @@ input{
         background-color: #1C2B4C;
         border-color: #1C2B4C;
     }
-    #google {
+    #white {
         background-color: #D94D34;
         border-color: #D94D34;
+    }
+     #white:hover {
+        background-color: #BF5946;
+        border-color: #BF5946;
+    }
+    #white:active {
+        background-color: #8C4134;
+        border-color: #8C4134;
+    } #google {
+
+        background-color: white;
+        border-color: white;
+        
     }
      #google:hover {
         background-color: #BF5946;
@@ -120,7 +133,12 @@ input{
       #login {
        background-color: #9F2731;
         border-color: #9F2731;
+    } 
+#login {
+       background-color: #9F2731;
+        border-color: #9F2731;
     }
+
     #login:hover {
        background-color: #853138;
         border-color: #853138;
@@ -129,6 +147,7 @@ input{
        background-color: #521E23;
         border-color: #521E23;
     }
+
   #signupbtn {
        background-color: #5b7fc6;
         border-color: #5b7fc6;
